@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: #888;
+}
+
+/* navbar */
+
+#navbar a {
+    text-decoration: none;
+    color: orange;
+    background: transparent;
+}
+
+#navbar .container ul li a {
+    display: block;
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+    color: orange;
+    border: solid #333 0.2rem;
+}
+
+#navbar .container ul li a:first-letter {
+    text-transform: uppercase;
+}
+
+#navbar .container ul li a:hover {
+    background: orange;
+    color: #444;
+    border: solid orange 0.2rem;
+}
+
+#navbar .container ul li a:focus {
+    outline: none;
+}
+
+#navbar {
+    background: #333;
+    width: 100%;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#navbar .container ul {
+    display: flex;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+#navbar .container h1 {
+    padding-left: 2rem;
+    text-transform: uppercase;
+    color: orange;
+    font-size: 1.75rem;
+}
+
+#navbar .container h4 {
+    font-size: 1rem;
+}
+
+#navbar .container .name {
+    display: block;
+    padding-left: 1rem;
+    align-self: center;
+    color: orange;
+}
+
+/* section 1 */
+
+section .container {
+    display: flex;
+    margin: auto;
+    width: 45vw;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 3rem;
+    padding-block: 3rem;
+    padding-inline: 5rem;
+    background: #333;
+    border: solid orange 0.2rem;
+}
+
+section .container .info {
+    color: orange;
+}
+
+section .container .container2 {
+    width: 100%;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+section .container .container2 .pref {
+    padding-right: 1%;
+    flex: 0.05;
+    font-size: 2.5vw;
+    color: orange;
+}
+
+section .container .container2 input {
+    flex: 0.95;
+    width: 100%;
+    background: #444;
+    border: solid orange 0.2rem;
+    padding-left: 0.5rem;
+    padding-block: 1.5%;
+    color: orange;
+    font-size: 1rem;
+}
+
+section .container .container2 input:focus {
+    outline: none;
+}
+
+section .container .container2 #file {
+    display: none;
+}
+
+section .container #submit {
+    color: orange;
+    background: #444;
+    border: solid orange 0.2rem;
+    padding-block: 1.5%;
+    width: 25%;
+    margin: auto;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+section .container #submit:hover {
+    color: #444;
+    background: orange;
+    border: solid #444 0.2rem;
+}
+
+section .container .container2 label h4 {
+    color: orange;
+    background: #333;
+    border: solid orange 0.2rem;
+    flex: 0.95;
+    font-size: 1rem;
+    text-align: center;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+section .container .container2 label h4:hover {
+    color: #444;
+    background: orange;
+    border: solid #444 0.2rem;
+}
+
+.error {
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: red;
+    border: dashed red 0.2rem;
+    width: 99%;
+    margin: auto;
+    padding-block: 0.5rem;
+    margin-bottom: 2.25rem;
+    text-transform: uppercase;
+}
+
+.success {
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: rgb(0, 182, 0);
+    border: dashed rgb(0, 182, 0) 0.2rem;
+    width: 99%;
+    margin: auto;
+    padding-block: 0.5rem;
+    margin-bottom: 2.25rem;
+    text-transform: uppercase;
+}
+
+#file-name {
+    color: orange;
+    padding-left: 1rem;
+    align-self: center;
+}

@@ -1,0 +1,458 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navbar */
+
+#navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+}
+
+#navbar .container .subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+#navbar h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#navbar .item{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding-inline: 1.5rem;
+    padding-block: 1.25rem;
+    color: #fff;
+}
+
+#navbar .item:hover {
+    background: #bbb;
+    color: #333;
+}
+
+#navbar .item2{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    display: block;
+    padding-inline: 1.5rem;
+    padding-block: 1.25rem;
+    color: #fff;
+}
+
+#navbar .item2:hover {
+    background: #bbb;
+    color: #333;
+}
+
+#navbar #login {
+    margin-right: 2.5rem;
+}
+
+#navbar .current {
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding-inline: 1.5rem;
+    padding-block: 1.25rem;
+}
+
+/* section */
+
+.s1 .container {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 45vh;
+    background-image: url("imgs/Mac.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.s1 .title {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.s1 .text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.s1 .rainbow {
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 12rem;
+    background-image: repeating-linear-gradient(to right, red, orange, yellow, lightgreen, green, blue, purple, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1000% 100%;
+    animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 0%
+    }
+
+    12.5% {
+        background-position: 25% 0%;
+    }
+    
+    25% {
+        background-position: 50% 0%;
+    }
+
+    37.5% {
+        background-position: 75% 0%;
+    }
+    
+    50% {
+        background-position: 100% 0%;
+    }
+
+    62.5% {
+        background-position: 75% 0%;
+    }
+    
+    75% {
+        background-position: 50% 0%;
+    }
+
+    87.5% {
+        background-position: 25% 0%;
+    }
+
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.form-section {
+    height: 100vh;
+    background-image: url("imgs/Accedi-sfondo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.form-section form {
+    width: 35vw;
+    margin: auto;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section form input {
+    margin-block: 1.15rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.form-section form #text {
+    border: solid #333 0.1rem;
+    border-radius: 30px;
+    width: 15rem;
+}
+
+.form-section form #text:focus {
+    outline: none;
+}
+
+.form-section form #btn {
+    color: white;
+    background: rgb(0, 90, 255);
+    border-radius: 30px;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+.form-section form #btn:hover {
+    cursor: pointer;
+}
+
+.form-section form h2 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: red;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* table */
+
+section .table-container {
+    width: 50vw;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+section .pcontainer {
+    display: flex;
+    margin-bottom: 2.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid rgb(0, 90, 255) 0.2rem;
+    border-radius: 30px;
+    color: #333;
+    padding: 1rem;
+}
+
+section .pimage {
+    height: 12.5rem;
+}
+
+section .pscontainer {
+    width: 25%;
+    text-align: center;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#confronto a {
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    background: rgb(0, 90, 255);
+    margin-top: 3rem;
+    width: 10rem;
+    padding: 0.65rem 1.75rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#confronto a:hover {
+    cursor: pointer
+}
+
+/* pagina comparazione */
+
+#comparazione .dropdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#comparazione .dropdown {
+    width: 15rem;
+    margin: auto;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+#comparazione .dropdown:hover {
+    background: #ccc;
+    border-radius: 20px;
+}
+
+#comparazione .dropdown:hover .dropbtn {
+    cursor: pointer;
+}
+
+#comparazione .dropbtn {
+    background-color: rgb(0, 90, 255);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.15rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#comparazione .dropdown-items {
+    display: none;
+}
+
+#comparazione .dropdown:hover .dropdown-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#comparazione .dropdown-items a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+}
+  
+#comparazione .dropdown-items a:hover {
+    background: #ddd;
+}
+
+#seleziona-comparazione .dropdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#seleziona-comparazione .dropdown {
+    width: 15rem;
+    margin: auto;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+#seleziona-comparazione .dropdown:hover {
+    background: #ccc;
+    border-radius: 20px;
+}
+
+#seleziona-comparazione .dropdown:hover .dropbtn {
+    cursor: pointer;
+}
+
+#seleziona-comparazione .dropbtn {
+    background-color: rgb(0, 90, 255);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.15rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#seleziona-comparazione .dropdown-items {
+    display: none;
+}
+
+#seleziona-comparazione .dropdown:hover .dropdown-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#seleziona-comparazione .dropdown-items a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+}
+  
+#seleziona-comparazione .dropdown-items a:hover {
+    background: #ddd;
+}
+
+#confronta-titolo {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#seleziona-comparazione .dropdown {
+    width: 15rem;
+    margin: auto;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+/* confronto finale */
+
+#info-prodotti .prods-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#info-prodotti .comp-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    padding: 1rem;
+}
+
+#info-prodotti .pinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(0, 90, 255) 0.2rem;
+    border-radius: 30px;
+    padding-block: 1rem;
+    width: 100%;
+    color: #333;
+}
+
+#info-prodotti .pinfo * {
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#info-prodotti .pname h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#info-prodotti .pi-image {
+    max-width: 85%; 
+    max-height: 20rem;
+}
+
+.text-style {
+    font-style: italic;
+}
